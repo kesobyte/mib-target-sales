@@ -15,44 +15,61 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Flipclock CSS -->
+    <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
   </head>
   <body>
-    
-  <div class="wrapper">
+    <div class="title"><h1>Target Sales 🚀</h1></div>
 
-    <div class="header-wrapper">
-      <div class="title"><h1>Target Sales</h1></div>
+    <div class="wrapper">
       <div class="container">
         <i class="fa-solid fa-users"></i>
-        <span class="num" data-val="312">000</span>
+        <span id="current-new-lives" class="num" data-val="330">000</span>
         <span class="text">Current New Lives</span>
+      </div>
+
+      <div class="container">
+        <i class="fa-solid fa-bullseye"></i>
+        <span id="left-lives" class="num" data-val="000">000</span>
+        <span class="text">Remaining Target</span>
       </div>
     </div>
 
-
     <div class="body-wrapper">
-      <div class="container">
+      <div class="container-info">
         <i class="fa-solid fa-egg"></i>
-        <span class="num" >800</span>
-        <span class="text">Duck Egg</span>
+        <span class="target-num" id="duck-egg">800</span>
+        <span class="text">Duck Eggs</span>
+        <p class="reward-info">--</p>
       </div>
 
-
-      <div class="container">
+      <div class="container-info">
         <i class="fa-solid fa-star"></i>
-        <span class="num">1000</span>
+        <span class="target-num" id="gold">1,000</span>
         <span class="text">Gold</span>
+        <p class="reward-info">Holiday Trip</p>
       </div>
 
-      <div class="container">
+      <div class="container-info">
         <i class="fa-solid fa-gem"></i>
-        <span class="num">1500</span>
+        <span class="target-num" id="platinum">1,500</span>
         <span class="text">Platinum</span>
+        <p class="reward-info">Luxury Holiday Trip</p>
       </div>
+    </div>
 
-  </div>
+    <!-- Countdown -->
+    <div class="countdown-wrapper">
+      <div class="clock-builder-output"></div>
+    </div>
 
-    <!-- Script -->
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="./script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="clock_assets/flipclock.js"></script>
   </body>
 </html>
