@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         countdown: true,
         language: "Custom",
       };
-     var countdown = 1767110400 - new Date().getTime() / 1000; // from: 12/31/2025 12:00 am +0800
+     var countdown = 1762416000 - new Date().getTime() / 1000; // from: 01/07/2025 12:00 am +0800
       countdown = Math.max(1, countdown);
       $(".clock-builder-output").FlipClock(countdown, opts);
     });
